@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+/*css for the main body of the page*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('quiz.jpg');
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+/*css for the main div*/
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*css for the div containing elements*/
+.quiz-box {
+    width: 600px;
+    /* height: 500px; */
+    margin: 0 auto;
+    background-color: pink;
+    padding: 10px 50px 50px 50px;
+    border-top: 20px dotted lime;
+    border-right: 20px dotted cyan;
+    border-bottom: 20px dotted lime;
+    border-left: 20px dotted cyan;
+    border-radius: 20px;
+    
+}
+/*css for the main heading*/
+.quiz-box h1 {
+    background-color: maroon;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 3px;   
+    font-family: 'Courier New', Courier, monospace; 
+}
+/*css for timer and question number*/
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*css mainly for the question number*/
+.quiz-header #progress {
+    color: brown;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/*css mainly for the count down timer*/
+.quiz-header #count-down {
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: magenta;
+    padding: 5px;
+    margin: 1px;
+    color: #fff;
+    border-radius: 5px;
+}
+/*css for the questions*/
+.quiz-box #question {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: blue;
+    border: 1px solid grey;
+    border-width: 1px 0;
+    padding: 5px 0;
+}
+/*css for the 4 options*/
+.buttons {
+    margin: 1.5rem 0 4rem 0;
+}
+
+.btn {
+    text-align: left;
+    background-color: black;
+    width: 100%;
+    font-size: 1.8rem;
+    color: white;
+    border: 5px solid purple;
+    border-radius: 20px;
+    margin: 7px 0;
+    padding: 1rem;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+}
+
+.btn:active {
+    background-color: red;
+}
+/*css for displaying the score*/
+#score {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+/*css if user wants to retake the user*/
+.quiz-repeat { 
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.quiz-repeat a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.quiz-repeat a:hover {
+    background-color: olivedrab;
+}

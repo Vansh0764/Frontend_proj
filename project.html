@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time</title>
+    <style>
+
+        
+        h1{
+            text-align:center;
+            font-size:30px;
+            color:white;
+            background-color:maroon;
+        }
+        img{
+            height:80px;
+            width:80px;
+        }
+        body{
+            background-image:url('back.jpg');
+        }
+        #center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:300px;
+            height:100px;
+        }
+        #btn{
+            text-align:center;
+            width: 100%;
+            font-size: 30px;
+            background-color: burlywood;
+            color: #ffffff;
+            padding: 1rem;
+        }
+        label{
+            text-align:center;
+            font-size: 30px;
+            color: tomato;
+        }
+        input{
+            width:50%;
+            height: 30px;
+        }
+        select{
+            width:760px;
+            height:35px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.jpg" alt="logo" id="center">
+    <!--<h1><marquee width="50%" behavior="alternate" scrollamount="15" direction="right">Rockpit</marquee></h1>-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="./quiz.html">
+        <label for="fname"><b>Enter your First name:</b></label>
+        <br>
+        <br>
+        <input required type="text" id="fname" name="fname" placeholder="First Name" maxlength="20"><br><br>
+        <label for="lname"><b>Enter your Last name:</b></label>
+        <br>
+        <br>
+        <input required type="text" id="lname" name="lname" placeholder="Last Name" maxlength="20"><br><br>
+        <label for="rollno"><b>Enter your Roll Number:</b></label>
+        <br>
+        <br>
+        <input required type="text" id="rollno" name="rollno" maxlength="10" placeholder="Roll Number"><br><br>
+        <label for="cars"><b>Choose your group number:</b></label>
+        <br>
+        <br>
+           <select name="group" id="group">
+              <option value="Group-1">Group-1</option>
+              <option value="Group-2">Group-2</option>
+              <option value="Group-3">Group-3</option>
+              <option value="Group-4">Group-4</option>
+              <option value="Group-5">Group-5</option>
+              <option value="Group-6">Group-6</option>
+              <option value="Group-7">Group-7</option>
+              <option value="Group-8">Group-8</option>
+              <option value="Group-9">Group-9</option>
+              <option value="Group-10">Group-10</option>
+           </select>
+           <br>
+           <br>
+           <br>
+           <br>
+            <!-- <button class="submit" id="btn">
+             <a href='./quiz.html'>!!!Visit the test!!!</a>
+            </button> -->
+            <button type="submit" id="btn" onclick="func()">!!!Visit the test!!!</button>
+    </form>
+    <script>
+        function func(){
+        var firstname = document.getElementById("fname");
+        var lastname = document.getElementById("lname");
+        var rollnumber = document.getElementById("rollno");
+        var group = document.getElementById("group");
+
+        localStorage.setItem("fname",firstname);
+        localStorage.setItem("lname",lastname);
+        localStorage.setItem("roll",rollnumber);
+        localStorage.setItem("group",group);
+        }
+    </script>
+</body>
+</html>
